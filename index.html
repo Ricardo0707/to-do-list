@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Lista de Tarefas</h1>
+        <div class="input-container">
+            <input type="text" id="task-input" placeholder="Digite uma tarefa...">
+            <button id="add-task">Adicionar</button>
+        </div>
+        <div class="filters">
+            <button class="filter active" data-filter="all">Todas</button>
+            <button class="filter" data-filter="pending">Pendentes</button>
+            <button class="filter" data-filter="completed">Concluídas</button>
+        </div>
+        <ul id="task-list"></ul>
+        <button id="toggle-theme">
+            <img id="theme-icon" src="assentes/Dark mode.png" alt="Alternar Tema" width="24">
+        </button>
+    </div>
+    <script src="jv.js"></script>
+</body>
+</html>
